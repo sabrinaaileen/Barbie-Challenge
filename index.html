@@ -54,8 +54,58 @@
       #opening-image:hover {
         scale: 1.1;
       }
-      #first-border {
-        border-color: pink;
+
+      .history {
+        margin-top: 20px;
+        border-top: 0.5px solid palevioletred;
+        padding-top: 20px;
+      }
+      h2 {
+        color: palevioletred;
+        font-size: 50px;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 22px;
+        color: palevioletred;
+        padding: 20px 20px;
+      }
+      .sourceLink {
+        font-size: 10px;
+        color: palevioletred;
+        text-decoration: none;
+      }
+      #original-barbie {
+        display: flex;
+        margin: 0 auto;
+        padding: 30px 10px;
+      }
+      .barbieImages {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+      #barbie-wikipedia-link {
+        background-color: palevioletred;
+        color: pink;
+        text-decoration: none;
+        box-shadow: 15px 15px 15px rgba(216, 112, 147, 0.4);
+        transition: all 150ms ease-in-out;
+      }
+      #barbie-wikipedia-link:hover {
+        border-color: palevioletred;
+        background-color: pink;
+        color: palevioletred;
+      }
+      .textBox {
+        padding: 10px 10px;
+        margin: 25px 0px 25px 0px;
+        border: 1px solid palevioletred;
+        border-radius: 8px;
+        background-color: palevioletred;
+        color: pink;
+        box-shadow: 15px 15px 15px rgba(216, 112, 147, 0.4);
       }
     </style>
   </head>
@@ -75,6 +125,50 @@
           sure that thousands of stories were born.
         </p>
       </div>
+      <div class="history">
+        <h2>It all started with a doll 💃🏽</h2>
+        <p>
+          March 9, 1959 - the official birthday of Barbie. It was the day she
+          was introduced to the world.
+          <small
+            ><a
+              href="https://www.history.com/news/barbie-through-the-ages"
+              class="sourceLink"
+              >Source</a
+            ></small
+          >
+        </p>
+        <div class="row" id="original-barbie">
+          <div class="col-4">
+            <img
+              src="http://www.historyofdolls.com/images/historyofdolls/original-mattel-barbie.jpg"
+              alt="Original Barbie bathing suit"
+              class="fluid barbieImages"
+            />
+          </div>
+          <div class="col-8" id="original-barbie-text">
+            <p class="textBox">
+              Barbie is a fashion doll created by American businesswoman Ruth
+              Handler, manufactured by American toy company Mattel and launched
+              in 1959. The toy is the figurehead of the Barbie brand that
+              includes a range of fashion dolls and accessories. Barbie has been
+              an important part of the toy fashion doll market for over six
+              decades. Mattel has sold over a billion Barbie dolls, making it
+              the company's largest and most profitable line.[1] The brand has
+              expanded into a multimedia franchise since the late 1980s,
+              including video games, computer-animated films, and a live-action
+              film.
+            </p>
+            <a
+              href="https://en.wikipedia.org/wiki/Barbie"
+              class="btn btn"
+              id="barbie-wikipedia-link"
+              >Read more on Wikipedia</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="movie"></div>
     </div>
     <footer></footer>
   </body>
