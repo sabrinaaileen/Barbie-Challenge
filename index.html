@@ -18,8 +18,9 @@
       }
       .hero {
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
         margin-top: 20px;
+        margin-bottom: 20px;
         padding: 10px 10px;
         max-width: 1200px;
         border: 1px solid palevioletred;
@@ -56,14 +57,20 @@
       }
 
       .history {
+        display: block;
+        margin: 0 auto;
+        max-width: 1100px;
         margin-top: 20px;
+        margin-bottom: 20px;
         border-top: 0.5px solid palevioletred;
         padding-top: 20px;
+        padding-bottom: 20px;
       }
       h2 {
         color: palevioletred;
         font-size: 50px;
-        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 15px;
       }
       p {
         font-size: 22px;
@@ -91,9 +98,23 @@
         color: pink;
         text-decoration: none;
         box-shadow: 15px 15px 15px rgba(216, 112, 147, 0.4);
+        margin-bottom: 15px;
         transition: all 150ms ease-in-out;
       }
       #barbie-wikipedia-link:hover {
+        border-color: palevioletred;
+        background-color: pink;
+        color: palevioletred;
+      }
+      #barbie-insider-link {
+        background-color: palevioletred;
+        color: pink;
+        text-decoration: none;
+        box-shadow: 15px 15px 15px rgba(216, 112, 147, 0.4);
+        margin-bottom: 25px;
+        transition: all 150ms ease-in-out;
+      }
+      #barbie-insider-link:hover {
         border-color: palevioletred;
         background-color: pink;
         color: palevioletred;
@@ -106,6 +127,113 @@
         background-color: palevioletred;
         color: pink;
         box-shadow: 15px 15px 15px rgba(216, 112, 147, 0.4);
+      }
+      .movie {
+        display: block;
+        margin: 0 auto;
+        max-width: 1100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 0.5px solid palevioletred;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .boxOfficeList {
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .boxOfficeList:hover {
+        transform: scale(2) translateY(20%);
+      }
+      .subtitle {
+        font-size: 14px;
+      }
+      iframe {
+        border-radius: 8px;
+      }
+      .cast {
+        display: block;
+        margin: 0 auto;
+        max-width: 1100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 0.5px solid palevioletred;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .smallHeading {
+        color: #d87093;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .card {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        transition: all 150ms ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
+      .imbdLink {
+        background-color: palevioletred;
+        color: pink;
+        text-decoration: none;
+        box-shadow: 15px 15px 15px rgba(216, 112, 147, 0.4);
+        transition: all 150ms ease-in-out;
+      }
+      .imbdLink:hover {
+        border-color: palevioletred;
+        background-color: pink;
+        color: palevioletred;
+      }
+      .card-body {
+        background-color: rgba(216, 112, 147, 0.1);
+      }
+      .gerwigImage {
+        max-height: 400px;
+      }
+      #greta-card {
+        width: 35rem;
+      }
+      footer {
+        margin: 15px 15px 15px 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #d87093;
+        font-size: 16px;
+      }
+      footer a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        color: #d87093;
+      }
+      @media (max-width: 800px) {
+        #opening-image {
+          width: 500px;
+        }
+        #greta-card {
+          width: 25rem;
+        }
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 50px;
+        }
+        #opening-image {
+          width: 300px;
+        }
+        iframe {
+          width: 300px;
+        }
+        #greta-card {
+          width: 20rem;
+        }
       }
     </style>
   </head>
@@ -139,14 +267,14 @@
           >
         </p>
         <div class="row" id="original-barbie">
-          <div class="col-4">
+          <div class="col-lg-4">
             <img
               src="http://www.historyofdolls.com/images/historyofdolls/original-mattel-barbie.jpg"
               alt="Original Barbie bathing suit"
               class="fluid barbieImages"
             />
           </div>
-          <div class="col-8" id="original-barbie-text">
+          <div class="col-lg-8" id="original-barbie-text">
             <p class="textBox">
               Barbie is a fashion doll created by American businesswoman Ruth
               Handler, manufactured by American toy company Mattel and launched
@@ -168,8 +296,290 @@
           </div>
         </div>
       </div>
-      <div class="movie"></div>
+      <div class="movie">
+        <h2>The 2023 movie 😱</h2>
+        <p>
+          A real life Barbie! It is a true spectacle in pink - with Margot
+          Robbie as our Barbie! This movie managed to climb the top of the list
+          with the most succesful movies 2023. Congratualtions for that!
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="textBox">
+              The movie will follow America's most iconic doll as she leaves her
+              sheltered life in "Barbie Land" behind and steps — flat feet first
+              — into the real world. She'll be asking some big questions on her
+              journey (with her boyfriend Ken following along). Her biggest one,
+              which literally stops her friends in their tracks, is "Do you guys
+              ever think about dying?" There will be singing, dancing, and lots
+              of bright colors along the way. According to a recent Vogue
+              interview, Ken mostly thinks about the beach in the film, while
+              Barbie experiences the harsh realities of being sexualized against
+              her will.
+            </p>
+            <a
+              href="https://www.insider.com/barbie-movie-cast-rating-release-plot-trailer-soundtrack-2023-5"
+              class="btn btn"
+              id="barbie-insider-link"
+              >Read more on Insider</a
+            >
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://preview.redd.it/q61ltk4bnqjb1.png?width=640&crop=smart&auto=webp&s=4ca5e708203286026a899a598b3b1869c5841735"
+              alt="2023 Worldwide Box Office"
+              class="boxOfficeList"
+            />
+            <p class="subtitle">Hover it!</p>
+            <iframe
+              width="450"
+              height="275"
+              src="https://www.youtube.com/embed/mmd4O9qgcNE?si=cpx8a-tESeAPoFbC"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="cast">
+        <h2>The Cast</h2>
+        <p>
+          Here you can have a quick look at the cast of this pink-tastic movie.
+          Because the cast is very huge I give you an overview and then two
+          links for your own research 🕵🏽🕵🏼‍♂️.
+        </p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-margot-64a841f0980e4.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Margot Robbie Barbie"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Margot Robbie</h5>
+                <p class="card-text">
+                  as, you may say, the Stereotypical Barbie, as
+                  <em>the</em> Barbie
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm3053338/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-ryan-64a842a5e80a3.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Ryan Gosling Ken"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Ryan Gosling</h5>
+                <p class="card-text">
+                  as the leading hunk of Margot Robbie, you may say as Beach Ken
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm0331516/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-america-64a8435ece2b9.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="America Ferrera as Gloria"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">America Ferrera</h5>
+                <p class="card-text">
+                  as Gloria, a human from the real world
+                  <br />
+                  <br />
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm1065229/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-dualipa-64a845e16ecdf.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Dua Lipa as Mermaid Barbie"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Dua Lipa</h5>
+                <p class="card-text">
+                  as Mermaid Barbie
+                  <br />
+                  <br />
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm7645984/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-simu-64a84514d329f.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Simu Liu as Tourist/Rival Ken"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Simu Liu</h5>
+                <p class="card-text">as Tourist Ken/"Rival Ken"</p>
+                <a
+                  href="https://www.imdb.com/name/nm4855517/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-issa-64a8474699163.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Issa Rae as President Barbie"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Issa Rae</h5>
+                <p class="card-text">
+                  as President Barbie
+                  <br />
+                  <br />
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm4793987/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-will-64a8499fd6458.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Will Ferrell as Mattel's CEO"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Will Ferrell</h5>
+                <p class="card-text">
+                  as Mattel's CEO
+                  <br />
+                  <br />
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm0002071/"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-ruth-64baaf43d39d0.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Rhea Perlman as Ruth Handler"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Rhea Perlman</h5>
+                <p class="card-text">as Ruth Handler, Barbie's Creator</p>
+                <a
+                  href="https://www.imdb.com/name/nm0674231/?ref_=nv_sr_srsg_0_tt_7_nm_1_q_rhea%2520perl"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod/images/wh-barbie-kate-64a8482b7e3b4.png?crop=1xw:1xh;center,top&resize=980:*"
+                class="card-img-top"
+                alt="Kate McKinnon as Weird Barbie"
+              />
+              <div class="card-body">
+                <h5 class="card-title smallHeading">Kate McKinnon</h5>
+                <p class="card-text">
+                  as Weird Barbie
+                  <br />
+                  <br />
+                </p>
+                <a
+                  href="https://www.imdb.com/name/nm0571952/?ref_=fn_al_nm_1"
+                  class="btn btn imbdLink"
+                  >See on IMDb</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>The Director</h2>
+        <div class="card" id="greta-card">
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/64bebd87504bdb77f09a6bc5/0x0.jpg?format=jpg&width=1200"
+            class="card-img-top gerwigImage"
+            alt="Greta Gerwig Barbie"
+          />
+          <div class="card-body">
+            <h5 class="card-title smallHeading">Greta Gerwig</h5>
+            <p class="card-text">
+              is the director, who has become the first woman to lead a film
+              that surpasses the billion-dollar mark at the box office.
+            </p>
+            <a
+              href="https://www.imdb.com/name/nm1950086/"
+              class="btn btn imbdLink"
+              >See on IMDb</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div>
+        This pink-tastic landing page was coded by
+        <a
+          href="https://www.instagram.com/sabrina_aileen_hodapp/"
+          target="_blank"
+          >Sabrina Aileen Hodapp</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/sabrinaaileen/Barbie-Challenge"
+          target="_blank"
+          >GitHub</a
+        >.
+      </div>
+    </footer>
   </body>
 </html>
