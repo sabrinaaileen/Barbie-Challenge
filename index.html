@@ -16,10 +16,23 @@
         text-align: center;
         background-color: rgba(216, 112, 147, 0.1);
       }
+      .navbar {
+        background-color: rgba(255, 192, 203, 0.4);
+        margin-bottom: 90px;
+        border-radius: 8px;
+        box-shadow: 5px 10px 5px rgba(216, 112, 147, 0.2);
+      }
+      .navbar-brand {
+        color: #d87093;
+        font-weight: bold;
+      }
+      .nav-link {
+        color: #d87093;
+      }
       .hero {
         display: block;
         margin: 10px auto;
-        margin-top: 20px;
+        margin-top: 80px;
         margin-bottom: 20px;
         padding: 10px 10px;
         max-width: 1200px;
@@ -92,6 +105,10 @@
         display: block;
         margin: 0 auto;
         border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+      .barbieImages:hover {
+        transform: scale(1.1);
       }
       #barbie-wikipedia-link {
         background-color: palevioletred;
@@ -238,7 +255,32 @@
     </style>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Barbie</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#history">History</a>
+              <a class="nav-link" href="#movie">Movie</a>
+              <a class="nav-link" href="#cast">Cast</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class="hero">
       <div class="greeting">
         <h1>Let's Barbie your life</h1>
@@ -253,7 +295,7 @@
           sure that thousands of stories were born.
         </p>
       </div>
-      <div class="history">
+      <div class="history" id="history">
         <h2>It all started with a doll 💃🏽</h2>
         <p>
           March 9, 1959 - the official birthday of Barbie. It was the day she
@@ -276,7 +318,7 @@
           </div>
           <div class="col-lg-8" id="original-barbie-text">
             <p class="textBox">
-              Barbie is a fashion doll created by American businesswoman Ruth
+              "Barbie is a fashion doll created by American businesswoman Ruth
               Handler, manufactured by American toy company Mattel and launched
               in 1959. The toy is the figurehead of the Barbie brand that
               includes a range of fashion dolls and accessories. Barbie has been
@@ -285,7 +327,7 @@
               the company's largest and most profitable line.[1] The brand has
               expanded into a multimedia franchise since the late 1980s,
               including video games, computer-animated films, and a live-action
-              film.
+              film."
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Barbie"
@@ -296,7 +338,7 @@
           </div>
         </div>
       </div>
-      <div class="movie">
+      <div class="movie" id="movie">
         <h2>The 2023 movie 😱</h2>
         <p>
           A real life Barbie! It is a true spectacle in pink - with Margot
@@ -306,16 +348,16 @@
         <div class="row">
           <div class="col-lg-6">
             <p class="textBox">
-              The movie will follow America's most iconic doll as she leaves her
-              sheltered life in "Barbie Land" behind and steps — flat feet first
-              — into the real world. She'll be asking some big questions on her
-              journey (with her boyfriend Ken following along). Her biggest one,
-              which literally stops her friends in their tracks, is "Do you guys
-              ever think about dying?" There will be singing, dancing, and lots
-              of bright colors along the way. According to a recent Vogue
-              interview, Ken mostly thinks about the beach in the film, while
-              Barbie experiences the harsh realities of being sexualized against
-              her will.
+              "The movie will follow America's most iconic doll as she leaves
+              her sheltered life in "Barbie Land" behind and steps — flat feet
+              first — into the real world. She'll be asking some big questions
+              on her journey (with her boyfriend Ken following along). Her
+              biggest one, which literally stops her friends in their tracks, is
+              "Do you guys ever think about dying?" There will be singing,
+              dancing, and lots of bright colors along the way. According to a
+              recent Vogue interview, Ken mostly thinks about the beach in the
+              film, while Barbie experiences the harsh realities of being
+              sexualized against her will."
             </p>
             <a
               href="https://www.insider.com/barbie-movie-cast-rating-release-plot-trailer-soundtrack-2023-5"
@@ -343,7 +385,7 @@
           </div>
         </div>
       </div>
-      <div class="cast">
+      <div class="cast" id="cast">
         <h2>The Cast</h2>
         <p>
           Here you can have a quick look at the cast of this pink-tastic movie.
@@ -567,7 +609,8 @@
     </div>
     <footer>
       <div>
-        This pink-tastic landing page was coded by
+        This pink-tastic landing page is for learning purposes only and was
+        coded by
         <a
           href="https://www.instagram.com/sabrina_aileen_hodapp/"
           target="_blank"
